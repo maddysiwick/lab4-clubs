@@ -26,7 +26,6 @@ public class Club
     {
         members.add(member); //42
     }
-
     /**
      * @return The number of members (Membership objects) in
      *         the club.
@@ -35,4 +34,14 @@ public class Club
     {
         return members.size(); //42
     }
+    public ArrayList<Membership> purge(int month, int year){
+        ArrayList<Membership> purgedMembers = new ArrayList<>();
+        Iterator<Membership> it = new members.iterator();
+        while(it.hasNext()){
+            if(it.next().getMonth() == month && it.next().getYear() ==year){
+                purgedMembers.add(it.next());
+                it.remove();
+            }
+        }
+        return purgedMembers;
 }
