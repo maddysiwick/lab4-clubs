@@ -149,3 +149,16 @@ objects stored in it.
 
 Note: the purge method is significantly harder to write than
 any of the others.
+
+44. You could play all songs a number of times proportional to the play count.
+45. import java.util.Random
+    public void shuffle(){
+        ArrayList<Track> shuffleTracks = new ArrayList<>(trackList);
+        Random random = new Random();
+        while(shuffleTracks.size()>0){
+            int index = random.nextInt(shuffleTracks.size();
+            playTrack(shuffleTracks.get().getFileName);
+            shuffleTracks.remove(index);
+        }
+}
+To do the first method I think you would need to import Collections.
