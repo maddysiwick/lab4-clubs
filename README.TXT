@@ -156,9 +156,14 @@ any of the others.
         ArrayList<Track> shuffleTracks = new ArrayList<>(trackList);
         Random random = new Random();
         while(shuffleTracks.size()>0){
+            bool playing;
+            while(player.getPlayer != null){
+               playing = true;
+            }
             int index = random.nextInt(shuffleTracks.size();
             playTrack(shuffleTracks.get().getFileName);
             shuffleTracks.remove(index);
         }
 }
+THERES A PROBLEM IN THIS CODE: This will only play small sections of each song. To solve this, you would need to add a getter method for the player field of the MusicPlayer. Code assumming this is true has been added above. I hope this loop that would be several minutes long would not cause problems
 To do the first method I think you would need to import Collections.
